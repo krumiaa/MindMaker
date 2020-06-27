@@ -15,10 +15,7 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
 -	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
 -	Self-play mechanism for training agents in adversarial scenarios
 -	Supported RL Algorithms include:
-1. First list item
-   - First nested list item
-     - Second nested list item
-
+- First list item
    -	A2C
    -	ACER
    -	ACKTR
@@ -31,6 +28,7 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
    -	SAC 
    -	TD3
    -	TRPO
+
 
 ## Components 
 There are two primary components you will use while working with the MindMaker toolkit, an Unreal Project containing your learning environment, and a standalone python application(MindMaker.py) comprising the OpenAI GymWrapper and the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn.
