@@ -38,7 +38,6 @@ One may think of MindMaker.py as the “brains” of the AI, which communicates 
 You will need to install all dependencies associated with MindMaker.py prior to running the standalone application. 
 
 ### Python Dependencies 
- 
 - Flask==1.0.2
 - eventlet==0.20.1
 - gym==0.17.1
