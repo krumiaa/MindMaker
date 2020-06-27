@@ -10,11 +10,11 @@ For game developers, the use cases for self-optimizing agents include controllin
 
 The API provides a wrapper for OPEN AI Gym Environments, effectively porting any Unreal Engine 4 environment into a format compatible with a large variety of Python Machine Learning libraries including Stable Baselines  and Uber’s Neuroevolution.  With the API, algorithms can quickly be deployed in UE4 without the user needing to implement them from scratch. The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
 
-##Features
-* Ready to use example project demonstrating how to use the API
-*	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
-*	Self-play mechanism for training agents in adversarial scenarios
-*	Supported RL Algorithms include:
+## Features
+- Ready to use example project demonstrating how to use the API
+-	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
+-	Self-play mechanism for training agents in adversarial scenarios
+-	Supported RL Algorithms include:
    -	A2C
    -	ACER
    -	ACKTR
@@ -28,7 +28,7 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
    -	TD3
    -	TRPO
 
-##Components 
+## Components 
 There are two primary components you will use while working with the MindMaker toolkit, an Unreal Project containing your learning environment, and a standalone python application(MindMaker.py) comprising the OpenAI GymWrapper and the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn.
 MindMaker.py is essentially agnostic to the problem described in the UE environment and can therefore be used to solve/play any type of game created in Unreal Engine, provided it follows the specified format for passing environmental variables to the learning algorithm.
 One may think of MindMaker.py as the “brains” of the AI, which communicates with the unreal engine environment through a socketIO connection.
