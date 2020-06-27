@@ -15,18 +15,18 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
 *	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
 *	Self-play mechanism for training agents in adversarial scenarios
 *	Supported RL Algorithms include:
-  -	A2C
-  -	ACER
-  -	ACKTR
-  -	DDPG
-  -	DQN
-  -	GAIL
-  -	HER
-  -	PPO1
-  -	PPO2
-  -	SAC 
-  -	TD3
-  -	TRPO
+   -	A2C
+   -	ACER
+   -	ACKTR
+   -	DDPG
+   -	DQN
+   -	GAIL
+   -	HER
+   -	PPO1
+   -	PPO2
+   -	SAC 
+   -	TD3
+   -	TRPO
 
 ##Components 
 There are two primary components you will use while working with the MindMaker toolkit, an Unreal Project containing your learning environment, and a standalone python application(MindMaker.py) comprising the OpenAI GymWrapper and the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn.
@@ -38,15 +38,16 @@ You will need to install all dependencies associated with MindMaker.py prior to 
 
 ### Python Dependencies 
  
-Flask==1.0.2
-eventlet==0.20.1
-gym==0.17.1
-stable_baselines==2.10.0  (or other any other ML library you wish to use in conjunction with mindmaker.py)
-numpy==1.18.2
-gevent==20.6.2
-gevent_socketio==0.3.6
-gevent_websocket==0.10.1
-python_engineio==3.13.0
+- Flask==1.0.2
+- eventlet==0.20.1
+- gym==0.17.1
+- stable_baselines==2.10.0  (or other any other OpenAI Gym compatible ML library you wish to use in conjunction with mindmaker.py)
+- numpy==1.18.2
+- gevent==20.6.2
+- gevent_socketio==0.3.6
+- gevent_websocket==0.10.1
+- python_engineio==3.13.0
+
 Once these have been successfully installed using pip, you will want to configure your unreal environment for communicating with MindMaker.py
 
 SocketIO Plugin – You will be communicating with MindMaker.py through a socketIO connection and therefore must have a socketIO plugin installed for unreal engine. You can install this from Github or the UE4 Marketplace
@@ -67,8 +68,7 @@ This is a three step process, you need to decide what actions the agent can take
 
 ### Diagram of the Learning Processfor use with MindMaker
 
-Launch MindMaker.py   ---------Receive Action --------Make Obs-----Check Rewards 							|						|							|                    					|
- ---------------------Send Obs to MindMaker.py 
+Launch MindMaker.py  ---------> Receive Action --------> Make Obs -----> Check Rewards --------> Send Obs and Rwrd to MindMaker.py ------ Return To Recieve Action
 
 In the learning process, MindMaker.py must first be configured with the observation space the agent is using and the total number of actions available to the agent. You don’t need to provide any reward information when it is initialized, this will only be encountered during training. 
 
