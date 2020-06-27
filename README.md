@@ -1,23 +1,23 @@
 # MindMaker + GymWrapper
 MindMaker UE4 Machine Learning Toolkit 
 
-![alt text](http://www.autonomousduck.com/images/banner.png)
+![alt text](http://www.autonomousduck.com/images/banner2.png)
 
 The UE4 Machine Learning Toolkit (MindMaker) is an open-source project that enables games and simulations within UE4 to function as environments for training autonomous learning agents. Agents can be trained using deep reinforcement learning, genetic algorithms and a variety of other machine learning methods made accessible through an easy-to-use Python API.  With this tool game developers and researchers can easily train machine learning agents for 2D, 3D and VR projects. 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
 The API provides a wrapper for OPEN AI Gym Environments, effectively porting any Unreal Engine 4 environment into a format compatible with a large variety of Python Machine Learning libraries including Stable Baselines  and Uber’s Neuroevolution.  With the API, algorithms can quickly be deployed in UE4 without the user needing to implement them from scratch. The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
 Features
-•	Ready to use example project demonstrating how to use the API
-•	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
-•	Self-play mechanism for training agents in adversarial scenarios
-•	Supported RL Algorithms include:
-o	A2C
-o	ACER
-o	ACKTR
-o	DDPG
-o	DQN
-o	GAIL
+* Ready to use example project demonstrating how to use the API
+*	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
+*	Self-play mechanism for training agents in adversarial scenarios
+*	Supported RL Algorithms include:
+-	A2C
+-	ACER
+-	ACKTR
+-	DDPG
+-	DQN
+-	GAIL
 o	HER
 o	PPO1
 o	PPO2
