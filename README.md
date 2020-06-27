@@ -33,7 +33,7 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
 ## Components 
 There are two primary components you will use while working with the MindMaker toolkit, an Unreal Project containing your learning environment, and a standalone python application(MindMaker.py) comprising the OpenAI GymWrapper and the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn.
 MindMaker.py is essentially agnostic to the problem described in the UE environment and can therefore be used to solve/play any type of game created in Unreal Engine, provided it follows the specified format for passing environmental variables to the learning algorithm.
-One may think of MindMaker.py as the “brains” of the AI, which communicates with the unreal engine environment through a socketIO connection.
+One may think of MindMaker.py as the “brains” of the AI, which communicates with the Unreal Engine environment through a socketIO connection.
 
 ## Installation
 You will need to install all dependencies associated with MindMaker.py prior to running the standalone application. 
@@ -50,9 +50,9 @@ You will need to install all dependencies associated with MindMaker.py prior to 
 - gevent_websocket==0.10.1
 - python_engineio==3.13.0
 
-Once these have been successfully installed using pip, you will want to configure your unreal environment for communicating with MindMaker.py
+Once these have been successfully installed using pip, you will want to configure your Unreal environment for communicating with MindMaker.py
 
-SocketIO Plugin – You will be communicating with MindMaker.py through a socketIO connection and therefore must have a socketIO plugin installed for unreal engine. You can install this from Github or the UE4 Marketplace
+SocketIO Plugin – You will be communicating with MindMaker.py through a socketIO connection and therefore must have a socketIO plugin installed for Unreal Engine. You can install this from Github or the UE4 Marketplace
 GitHub Release
 https://github.com/getnamo/socketio-client-ue4
 UE4 Marketplace
