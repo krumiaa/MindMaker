@@ -1,6 +1,8 @@
 # MindMaker GymWrapper
 MindMaker UE4 Machine Learning Toolkit 
 
+![alt text](http://www.autonomousduck.com/images/banner.png)
+
 The UE4 Machine Learning Toolkit (MindMaker) is an open-source project that enables games and simulations within UE4 to function as environments for training autonomous learning agents. Agents can be trained using deep reinforcement learning, genetic algorithms and a variety of other machine learning methods made accessible through an easy-to-use Python API.  With this tool game developers and researchers can easily train machine learning agents for 2D, 3D and VR projects. 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
