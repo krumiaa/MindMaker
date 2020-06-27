@@ -1,4 +1,4 @@
-# MindMaker GymWrapper
+# MindMaker + GymWrapper
 MindMaker UE4 Machine Learning Toolkit 
 
 ![alt text](http://www.autonomousduck.com/images/banner.png)
