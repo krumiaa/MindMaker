@@ -33,10 +33,10 @@ There are two primary components you will use while working with the MindMaker t
 MindMaker.py is essentially agnostic to the problem described in the UE environment and can therefore be used to solve/play any type of game created in Unreal Engine, provided it follows the specified format for passing environmental variables to the learning algorithm.
 One may think of MindMaker.py as the “brains” of the AI, which communicates with the unreal engine environment through a socketIO connection.
 
-##Installation
+## Installation
 You will need to install all dependencies associated with MindMaker.py prior to running the standalone application. 
 
-###Python Dependencies 
+### Python Dependencies 
  
 Flask==1.0.2
 eventlet==0.20.1
@@ -62,30 +62,32 @@ Steps
 -	Configure the the SocketIO blueprint function to receive actions from MindMaker.py and send back observations and reward data. Examples of how these can be setup are found in the sample project. 
 
 
-##Understand what problem your agent is trying to solve:
+## Understand what problem your agent is trying to solve:
 This is a three step process, you need to decide what actions the agent can take, what its reward criteria will be, and what observations the agent will need to make about its environment to successfully learn to receive a reward.
 
-###Diagram of the Learning Processfor use with MindMaker
+### Diagram of the Learning Processfor use with MindMaker
 
 Launch MindMaker.py   ---------Receive Action --------Make Obs-----Check Rewards 							|						|							|                    					|
  ---------------------Send Obs to MindMaker.py 
 
 In the learning process, MindMaker.py must first be configured with the observation space the agent is using and the total number of actions available to the agent. You don’t need to provide any reward information when it is initialized, this will only be encountered during training. 
+
 The overall process for learning is that once launched and connected to connected to Unreal Engine, MyMaker.py will begin supplying random actions for the Unreal Engine agent to take, and in response, the agent with UE will send back a list of observations it made once the action was taken, in addition to any reward it received in process. See above diagram. Over many episodes, the algorithm being employed by MindMaker.py will optimize the agents actions in response to the observations and rewards received from UE.
- This process is the same regardless of what machine learning algorithm one chooses to employ with MindMaker.py.  With this information the learning algorithm being used MindMaker.py will begin to optimize the Agents action decisions, ideally discovering the sequence necessary to consistently receive rewards. The tradeoff between random actions and intentional ones is controlled in the exploration/exploitation parameters of ML library you have selected for use with MindMaker, for example Stable Baselines. This process repeats for each episode of training. 
-After a fixed number of training episodes you can switch entirely to using the algorithm to predict “best” actions instead of taking random ones.
-MindMakey.py and the Environment Wrapper
+ This process is the same regardless of what machine learning algorithm one chooses to employ with MindMaker.py.  With this information the learning algorithm being used MindMaker.py will begin to optimize the Agents action decisions, ideally discovering the sequence necessary to consistently receive rewards. The tradeoff between random actions and intentional ones is controlled in the exploration/exploitation parameters of ML library you have selected for use with MindMaker, for example Stable Baselines. This process repeats for each episode of training. After a fixed number of training episodes you can switch entirely to using the algorithm to predict “best” actions instead of taking random ones.
+
+## MindMakey.py and the Environment Wrapper
 MindMaker.py functions by wrapping an unreal environment in a OpenAI Gym compatible format so that any ML library that has been designed to work with OpenAI Gym can be deployed  on your Unreal Engine environment. The purpose of using Open AI Gym is to standardize the relevant factors for learning, namely, the format for receiving the agents observations, rewards and actions, so that any ML algorityhm can have access to the relevant variables for learning without needing to be retrofitted for each specific task. Algorithms that work with OpenAI Gym can than work with any environment and agent which is using the standardized OpenAI protocol.
 Configuring MindMaker.py
+
 At the outset you will need to configure class UnrealEnvWrap for your Unreal Engine learning agent. This is done by setting the self.action_space variable within MindMaker.py to equal the total number of actions available to your agent. This can be passed in from unreal engine via the socketIO connection, or changed directly in MindMaker.py
 You will also need to configure self.observation_space variable to match the number and type of observations your agent will be using in regard to the reward it is attempting to receive. By default, observations are passed in from Unreal as an array, see the example project.  Depending on the number of observations your agent will find necessary to use, the size of self.observation_space will change. It needs to match the array size you are passing in from Unreal Engine, so this must be set accordingly in MindMaker.py at the outset. 
 
-##Key Variables to add in Unreal Engine
+## Key Variables to add in Unreal Engine
 Reward – A reward is a variable that is set according to the specific criterion you have chosen for the agent to learn or optimize around. In the UE4 blueprint you will use a branch node to determine what environmental conditions and agent action must be fulfilled for the reward to be activated. This is than passed to MindMaker.py by the socketIO connection and used in the MindMaker.py step function. See Project example. 
 Action – This is a variable that contains an integer value representing whatever action the agent has taken. You will also need to decide the total number of actions available to the agent and set the maxctions in MindMaker.py  to equal this number.
 Observations – Perhapse the trickiest variables you will be dealing with. The key to setting this correctly is to understand that the agents actions themselves must be included in the observations variable, in addition to any other environmental criterion referenced in the reward function. The agent needs to know what action or actions it took that influenced the reward and any environment variables that changed as well. These are passed to MindMakey.Py as an array and updated in the observations variable therein.
 
-##Key Functions to add in Unreal Engine
+## Key Functions to add in Unreal Engine
 A sample list of functions from the example project are presented below to understand how information is passed between MindMaker.py and Unreal Engine
 All of the UE assets relevant to the toy problem are contained in the Assets/DeeplearningNPC folder. Of particular importance is the blueprint called AI_Character_Controler_BP
 In the AI_Character_Controler_BP blueprint, all of the environment variables are configured for passing to the MindMaker standalone application. 
