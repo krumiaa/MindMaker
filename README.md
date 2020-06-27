@@ -12,11 +12,11 @@ The API provides a wrapper for OPEN AI Gym Environments, effectively porting any
 
 ## Features
 - Ready to use example project demonstrating how to use the API
--	Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
--	Self-play mechanism for training agents in adversarial scenarios
--	Supported RL Algorithms include:
-   -	A2C
-   -	ACER
+- Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
+- Self-play mechanism for training agents in adversarial scenarios
+- Supported RL Algorithms include:
+  -	A2C
+  -	ACER
    -	ACKTR
    -	DDPG
    -	DQN
