@@ -1,0 +1,90 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1",
+	"FriendlyName": "MindMaker",
+	"Description": "Create AI agents using machine learning",
+	"Category": "Networking",
+	"CreatedBy": "Aaron Krumins",
+	"CreatedByURL": "http://www.autonomousduck.com/about-us.html",
+	"DocsURL": "http://www.autonomousduck.com/plugin.html",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1ed5ba21261c476e9736488484b436ae",
+	"SupportURL": "http://www.autonomousduck.com/plugin.html",
+	"EngineVersion": "4.25.0",
+	"CanContainContent": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SocketIOClient",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Linux",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "SIOJson",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Linux",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "SocketIOLib",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Linux",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "CoreUtility",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Linux",
+				"Mac",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "SIOJEditorPlugin",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Linux",
+				"Mac"
+			]
+		},
+		{
+			"Name": "MindMaker",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+			]            
+		}
+	]
+}
