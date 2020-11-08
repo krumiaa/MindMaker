@@ -1,5 +1,5 @@
 # MindMaker AI Plugin for UE4
-Create Self Learning AI in Unreal Engine 4
+Create Self Learning AI Agents in Unreal Engine 4
 
 ![alt text](http://www.autonomousduck.com/images/banner2.png)
 
