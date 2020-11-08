@@ -40,11 +40,14 @@ There are two primary components you will use while working with the MindMaker P
 5.If you have downloaded the MindMaker DRL Starter Content & Example Project than simply open MindMakerActorBP blueprint or MindMakerAIControlerBP blueprint from the Content\MindMakerStarterContent\Assets\MindMakerStarterContent\MindMakerActorBP directory and begin creating your custom learning agent using the functions supplied. Be sure that the Socket IO address and port your are using is set to http://localhost:3000 .
 
 ## Quick Install & Setup For Creating a Custom Learning AI from Scratch
-1.[Download Latest Plugin Release](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
-2.[Download a compatible MindMaker Learning Engine](http://www.autonomousduck.com/mindmaker.html)
+1. [Download Latest Plugin Release](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
+2. [Download a compatible MindMaker Learning Engine](http://www.autonomousduck.com/mindmaker.html)
+or use the one included with the example project. 
 3. Move the learning engine and its accompanying files into the Content directory of your UE Project. The exact location of the learning engine should be "Content\MindMaker\dist\mindmaker\mindmaker.exe" if the location isnt as specified the plugin will not work to automaticaly launch the learning engine at the start of play and you will have to manually launch mindmaker.exe before begining training.
 4.Place the MindMaker AI Plugin in the Plugins directory of your UE Project.
-5.If you have downloaded the MindMaker DRL Starter Content & Example Project than simply open MindMakerActorBP blueprint or MindMakerAIControlerBP blueprint from the Content\MindMakerStarterContent\Assets\MindMakerStarterContent\MindMakerActorBP directory and begin creating your custom learning agent using the functions supplied. Be sure that the Socket IO address and port your are using is set to http://localhost:3000 .
+5.Add a socket IO component to the blueprint you have chosen to work with. A socketIO client component is included with Mindmaker AI plugin. Ensure that the Socket IO address and port your are using is set to http://localhost:3000
+6. Connect an Event begin play node to a MindMaker Windows node (One of the Plugins Assets) within your blueprint. The MindMaker Windows node can be found under the MindMaker AI blueprints class once the plugin is installed. Currently only MS windows is supported. Once you have MindMaker Windows node connected to an event begin play node, the MindMaker AI Learning Engine will automatically launch at the beginning of play assuming you have placed it in the correct location of your Projects Content Directory.
+7. Create the Reward, Action, Obersvation and Launch MindMaker Functions to use with the learning engine. For examples of how to create these, see the /examples directory which includes two maps CartPole and MatchToSample, which can be downloaded with the starter content.
 
 ## Quick Install & Setup For Creating a Custom Learning AI from Scratch
 1. [Download Latest Plugin Release](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
