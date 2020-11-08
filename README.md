@@ -39,8 +39,6 @@ There are two primary components you will use while working with the MindMaker P
 4.Place the MindMaker AI Plugin in the Plugins directory of your UE Project.
 5.If you have downloaded the MindMaker DRL Starter Content & Example Project than simply open MindMakerActorBP blueprint or MindMakerAIControlerBP blueprint from the Content\MindMakerStarterContent\Assets\MindMakerStarterContent\MindMakerActorBP directory and begin creating your custom learning agent using the functions supplied. Be sure that the Socket IO address and port your are using is set to http://localhost:3000
 
-Download DRL Starter Content And Example Project:
-http://www.autonomousduck.com/mindmaker.html
 
 
 ## Quick Install & Setup For Creating a Custom Learning AI from Scratch
