@@ -3,12 +3,14 @@ Create Self Learning AI Agents in Unreal Engine 4
 
 ![alt text](http://www.autonomousduck.com/images/banner2.png)
 
-**The MindMaker AI Plugin (aka Neurostudio Gymwrapper) ** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the Deep Reinforcement Learning(DRL) Engine. Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
+**[The MindMaker AI Plugin](http://www.autonomousduck.com/mindmaker.html) (aka Neurostudio Gymwrapper) ** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the Deep Reinforcement Learning(DRL) Engine. Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
 
 A functioning version of the DRL Learning Engine is included in the link to the example project. Algorithms presently supported by the DRL Learning Engine include : Actor Critic ( A2C ), Sample Efficient Actor-Critic with Experience Replay (ACER), Actor Critic using Kronecker-Factored Trust Region ( ACKTR ), Deep Q Network ( DQN ), Proximal Policy Optimization ( PPO ), Soft Actor Critic ( SAC ), Twin Delayed DDPG ( TD3 ), Trust Region Policy Optimization ( TRPO ), Deep Deterministic Policy Gradient ( DDPG ). The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
+
+
 
 ## Features
 - Ready to use example project demonstrating how to use the API
@@ -95,3 +97,6 @@ Make Observations function – The purpose of this is to update the agents obser
 
 CheckReward – this specifies the reward condition for the agent in the environment. If this reward condition is met following the agent taking an action, this information is passed to the standalone application in the send observations function that follows.
 Send Observations Function – takes the new observations made by the agent as well as any reward information and passes them to the standalone application. This is how the RL algorithm will be able to evaluate whether the action it has just taken was a good one, and update its strategy accordingly. After this function fires, the one iteration or episode of the game is complete, and the process repeats ad infinitum.
+
+## Further Reading
+[Creating Next-Gen Video Game AI With Reinforcement Learning](https://towardsdatascience.com/creating-next-gen-video-game-ai-with-reinforcement-learning-3a3ab5595d01)
