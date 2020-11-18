@@ -55,6 +55,7 @@ or use the one included with the example project.
 
 ## Tutorials & Examples
 [Intro. to Reinforcement Learning for Video Game AI](https://towardsdatascience.com/creating-next-gen-video-game-ai-with-reinforcement-learning-3a3ab5595d01)
+
 [Creating a Custom Deep Reinforcement Learning Environment](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e)
 
 ## Understand what problem your agent is trying to solve:
