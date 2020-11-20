@@ -98,7 +98,7 @@ Make Observations function – The purpose of this is to update the agents obser
 CheckReward – this specifies the reward condition for the agent in the environment. If this reward condition is met following the agent taking an action, this information is passed to the standalone application in the send observations function that follows.
 Send Observations Function – takes the new observations made by the agent as well as any reward information and passes them to the standalone application. This is how the RL algorithm will be able to evaluate whether the action it has just taken was a good one, and update its strategy accordingly. After this function fires, the one iteration or episode of the game is complete, and the process repeats ad infinitum.
 
-## Tutorials, Examples & Further Reading
+## Resources and Tutorials
 [Intro. to Reinforcement Learning for Video Game AI](https://towardsdatascience.com/creating-next-gen-video-game-ai-with-reinforcement-learning-3a3ab5595d01)
 
 [Creating a Custom Deep Reinforcement Learning Environment](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e)
