@@ -4,6 +4,7 @@ Create Self Learning AI Agents in Unreal Engine 4
 ![alt text](http://www.autonomousduck.com/images/banner2.png)
 
 Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
+
 **[The MindMaker AI Plugin](http://www.autonomousduck.com/mindmaker.html) (aka Neurostudio Gymwrapper) ** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the [Deep Reinforcement Learning(DRL) Engine](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
