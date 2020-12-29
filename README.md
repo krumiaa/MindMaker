@@ -5,7 +5,7 @@ Create Self Learning AI Agents in Unreal Engine 4
 
 Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
 
-**[The MindMaker AI Plugin](http://www.autonomousduck.com/mindmaker.html) (aka Neurostudio Gymwrapper) ** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the [Deep Reinforcement Learning(DRL) Engine](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
+**[The MindMaker AI Plugin](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the [Deep Reinforcement Learning(DRL) Engine](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
@@ -38,7 +38,7 @@ There are two primary components you will use while working with the MindMaker P
 
 
 ## Quick Install & Setup Using The MindMaker DRL Engine Starter Content
-1. [Download Latest Plugin Release](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
+1. Download Latest Plugin Release from GitHub or [UE Marketplace](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
 2. [Download a compatible MindMaker Learning Engine](http://www.autonomousduck.com/mindmaker.html)
 or use the one included with the example project. 
 3. Move the learning engine and its accompanying files into the Content directory of your UE Project. The exact location of the learning engine should be "Content\MindMaker\dist\mindmaker\mindmaker.exe" if the location isnt as specified the plugin will not work to automaticaly launch the learning engine at the start of play and you will have to manually launch mindmaker.exe before begining training.
