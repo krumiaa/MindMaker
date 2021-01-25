@@ -15,7 +15,7 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 ## Examples
 - [Download](https://drive.google.com/file/d/1Bs7mVUCt5G3-sBDFPe8oZCv5GZC4V7cj/view?usp=sharing) Complete Examples Project File
   - [CartPole Task](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e): Creating A Custom Reinforcement Learning Environment
-  - Automated Stock Trading: Importing and Manipulating Data Tables With Machine Learning
+  - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
   - Match To Sample: Solving A Memory Puzzle with a Non Player Character
 
 
