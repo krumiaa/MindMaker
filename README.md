@@ -44,7 +44,7 @@ There are two primary components you will use while working with the MindMaker P
 
 ## Quick Install & Setup Using The MindMaker DRL Engine Starter Content
 1. Download Latest Plugin Release from GitHub or [UE Marketplace](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
-2. [Download a compatible MindMaker Learning Engine](http://www.autonomousduck.com/mindmaker.html)
+2. [Download a compatible MindMaker Learning Engine](https://www.autonomousduck.com/mindmaker.html)
 or use the one included with the example project. 
 3. Move the learning engine and its accompanying files into the Content directory of your UE Project. The exact location of the learning engine should be "Content\MindMaker\dist\mindmaker\mindmaker.exe" if the location isnt as specified the plugin will not work to automaticaly launch the learning engine at the start of play and you will have to manually launch mindmaker.exe before begining training.
 4. Place the MindMaker AI Plugin in the Plugins directory of your UE Project.
@@ -52,7 +52,7 @@ or use the one included with the example project.
 
 ## Quick Install & Setup For Creating a Custom Learning AI from Scratch
 1. [Download Latest Plugin Release](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
-2. [Download a compatible MindMaker Learning Engine](http://www.autonomousduck.com/mindmaker.html)
+2. [Download a compatible MindMaker Learning Engine](https://www.autonomousduck.com/mindmaker.html)
 or use the one included with the example project. 
 3. Move the learning engine and its accompanying files into the Content directory of your UE Project. The exact location of the learning engine should be "Content\MindMaker\dist\mindmaker\mindmaker.exe" if the location isnt as specified the plugin will not work to automaticaly launch the learning engine at the start of play and you will have to manually launch mindmaker.exe before begining training.
 4.Place the MindMaker AI Plugin in the Plugins directory of your UE Project.
