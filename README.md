@@ -5,7 +5,7 @@ Create Machine Learning AI Agents in Unreal Engine 4
 
 Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
 
-**[The MindMaker AI Plugin](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous machine learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the [Deep Reinforcement Learning(DRL) Engine](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
+**[The MindMaker AI Plugin](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)** is an open-source plugin that enables games and simulations within UE4 to function as environments for training autonomous machine learning agents. The plugin facilitates a network connection and subsequent launch of a compatible MindMaker Learning Engine, for instance the [Deep Reinforcement Learning(DRL) Engine](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai) based on the [Stable Baselines](https://stable-baselines.readthedocs.io/en/master/) compilation of algorithms. Agents can currently be trained using deep reinforcement learning, a machine learning approach that combines neural networks with a learning model to sculpt agent behavior. With MindMaker, developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
 
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
@@ -109,4 +109,6 @@ Send Observations Function – takes the new observations made by the agent as w
 [Intro. to Reinforcement Learning for Video Game AI](https://towardsdatascience.com/creating-next-gen-video-game-ai-with-reinforcement-learning-3a3ab5595d01)
 
 [Reinforcement Learning – It’s Promise and Peril](https://www.amazon.com/Outsmarted-Reinforcement-Learning-Promise-Peril-ebook/dp/B08BG9FDC2/)
+
+[Stable Baselines Documentation](https://stable-baselines.readthedocs.io/en/master/)
 
