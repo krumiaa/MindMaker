@@ -12,7 +12,7 @@ For game developers, the use cases for self-optimizing agents include controllin
 
 A functioning version of the DRL Learning Engine is included in the link to the example project. Algorithms presently supported by the DRL Learning Engine include : Actor Critic ( A2C ), Sample Efficient Actor-Critic with Experience Replay (ACER), Actor Critic using Kronecker-Factored Trust Region ( ACKTR ), Deep Q Network ( DQN ), Proximal Policy Optimization ( PPO ), Soft Actor Critic ( SAC ), Twin Delayed DDPG ( TD3 ), Trust Region Policy Optimization ( TRPO ), Deep Deterministic Policy Gradient ( DDPG ). The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
 
-## Examples
+## Examples & Tutorials
 - [Download](https://drive.google.com/file/d/1Bs7mVUCt5G3-sBDFPe8oZCv5GZC4V7cj/view?usp=sharing) Complete Examples Project File
   - [CartPole Task](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e): Creating A Custom Reinforcement Learning Environment
   - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
@@ -105,10 +105,8 @@ Make Observations function – The purpose of this is to update the agents obser
 CheckReward – this specifies the reward condition for the agent in the environment. If this reward condition is met following the agent taking an action, this information is passed to the standalone application in the send observations function that follows.
 Send Observations Function – takes the new observations made by the agent as well as any reward information and passes them to the standalone application. This is how the RL algorithm will be able to evaluate whether the action it has just taken was a good one, and update its strategy accordingly. After this function fires, the one iteration or episode of the game is complete, and the process repeats ad infinitum.
 
-## Resources and Tutorials
+## Further Resources
 [Intro. to Reinforcement Learning for Video Game AI](https://towardsdatascience.com/creating-next-gen-video-game-ai-with-reinforcement-learning-3a3ab5595d01)
-
-[Creating a Custom Deep Reinforcement Learning Environment](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e)
 
 [Reinforcement Learning – It’s Promise and Peril](https://www.amazon.com/Outsmarted-Reinforcement-Learning-Promise-Peril-ebook/dp/B08BG9FDC2/)
 
