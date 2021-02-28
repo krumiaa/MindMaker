@@ -1,7 +1,7 @@
 # MindMaker AI Plugin for UE4
 Create Machine Learning AI Agents in Unreal Engine 4
 
-![alt text](http://www.autonomousduck.com/images/banner2.png)
+![alt text](https://www.autonomousduck.com/images/banner2.png)
 
 Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
 
