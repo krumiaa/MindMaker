@@ -60,6 +60,11 @@ or use the one included with the example project.
 6. Connect an Event begin play node to a MindMaker Windows node (One of the Plugins Assets) within your blueprint. The MindMaker Windows node can be found under the MindMaker AI blueprints class once the plugin is installed. Currently only MS windows is supported. Once you have MindMaker Windows node connected to an event begin play node, the MindMaker AI Learning Engine will automatically launch at the beginning of play assuming you have placed it in the correct location of your Projects Content Directory.
 7. Create the Reward, Action, Obersvation and Launch MindMaker Functions to use with the learning engine. For examples of how to create these, see the /examples directory which includes two maps CartPole and MatchToSample, which can be downloaded with the starter content.
 
+## Saving and Loading Models:
+To save a trained model, set the “Save Model after Training” checkbox in the Launch MindMaker Function to True.  You will need to ensure your number of training episodes is a non zero number. The model will save after training completes.
+To load the trained models, uncheck the “Save Model after Training” checkbox and instead set the “Load Pre Trained Model” checkbox in the Launch MindMaker Function to True. You will also need to set the number of training episodes to zero, since no training is to occur. Ensure the number of evaluations episodes is a non-zero integer, since this will be how the pre-trained model demonstrates learning.
+Models are saved locally in the “Appdata roaming” folder of your computer, for instance c:\Users\LeoN\Appdata\Roaming
+
 
 ## Understand what problem your agent is trying to solve:
 This is a three step process, you need to decide what actions the agent can take, what its reward criteria will be, and what observations the agent will need to make about its environment to successfully learn to receive a reward.
