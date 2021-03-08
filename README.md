@@ -41,7 +41,16 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 
 
 ## Components 
-There are two primary components you will use while working with the MindMaker Plugin, an Unreal Project containing your learning environment, and a standalone application with the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn.
+There are two primary components you will use while working with the MindMaker Plugin, an Unreal Project containing your learning environment, and a standalone application with the associated learning algorithm(s) being used by the agent to optimize whatever it is attempting to learn. The standalone application can be a python script in the event you are creating your own custom ML tool using the MindMaker Remote ML Server, or it could be a precompiled learning engine such as the MindMaker DRL Engine. 
+
+## MindMaker Remote ML
+If you would like to experiment using different ML libraries in conjunction with MindMaker, the MindMaker Remote ML Server can be used for this purpose. With it you can customize your own python learning engine, rather than use the pre-compiled DRL Engine.
+To use the Remote ML Server, follow these steps:
+-	[Download](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin) and install the free MindMaker AI Plugin for UE 
+-	[Download](https://drive.google.com/file/d/1PNo7PkIR_OAjC7Nmr0WzLpfRxwWbDe3x/view?usp=sharing) the Server Example project for UE – this includes the MindMaker Remote Server Application that will auto-launch when each project is run.
+-	Download mindmaker_client.py from RemoteML Github Repo. 
+-	Install python dependencies and start the mindmaker_client.py file. This should be done after the UE example project is up and running so the server application that connects the client is already active. When you run mindmaker_client.py it will automatically search for the mindmaker server and connect. Training will than begin using the algorithm you have selected.
+-	Modify or replace mindmaker_client.py to use python ML library of your choice. mindmaker_client.py includes an OpenAI Gym wrapper for UE that allows any OpenAI compatible machine learning library to interface with Unreal Engine.
 
 
 ## Quick Install & Setup Using The MindMaker DRL Engine Starter Content
