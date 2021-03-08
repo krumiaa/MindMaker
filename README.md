@@ -21,7 +21,7 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 
 ## Features
 - Implement multiple python based ML libraries directly in Unreal Engine with the MindMaker Client Server files – See RemoteML Example and Documentation
-- Precompiled Deep Reinforcement Learning Package for production use cases – ca auto launche at start of game / simulation
+- Precompiled Deep Reinforcement Learning Package for production use cases – auto-launches at start of game / simulation
 - Ready to use example project demonstrating how to use the API
 - Modify the full range of learning parameters including the number of networks layers, batch size, learning rate, gamma, exploration/exploitation trade off, etc
 - Self-play mechanism for training agents in adversarial scenarios
