@@ -43,14 +43,26 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 ## Components 
 There are two primary components you will use while working with the MindMaker Plugin, an Unreal Enginge Project containing the learning environment, and a standalone machine learning library used by the agent to optimize whatever it is attempting to learn. The standalone machine learning library can either be a custom python script in the event you are creating your own ML tool using MindMaker’s Remote ML Server, or it could be a precompiled learning engine such as the [MindMaker DRL Engine(Stable Baselines Algorithms)](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). 
 
-## MindMaker Remote ML
-If you would like to experiment using different ML libraries in conjunction with MindMaker, the MindMaker Remote ML Server can be used for this purpose. With it you can customize your own python learning engine, rather than use the pre-compiled DRL Engine.
+## MindMaker Client Server Remote ML
+To experiment using different ML libraries in conjunction with MindMaker, use the MindMaker Remote ML Server. With it you can customize your own python learning engine, rather than use the pre-compiled MindMaker DRL Engine. To use the Remote ML Server, follow these steps:
 To use the Remote ML Server, follow these steps:
 -	[Download](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin) and install the free MindMaker AI Plugin for UE 
--	[Download](https://drive.google.com/file/d/1PNo7PkIR_OAjC7Nmr0WzLpfRxwWbDe3x/view?usp=sharing) the Server Example project for UE – this includes the MindMaker Remote Server Application that will auto-launch when each project is run.
--	Download mindmaker_client.py from RemoteML Github Repo. 
--	Install python dependencies and start the mindmaker_client.py file. This should be done after the UE example project is up and running so the server application that connects the client is already active. When you run mindmaker_client.py it will automatically search for the mindmaker server and connect. Training will than begin using the algorithm you have selected.
+-	[Download](https://drive.google.com/file/d/1PNo7PkIR_OAjC7Nmr0WzLpfRxwWbDe3x/view?usp=sharing) the Server Example project for UE – this includes the MindMaker Remote Server Application that will auto-launch when each project is run and a sample python client ML app called mindmaker_client.py
+-	Download mindmaker_client.py from RemoteML Github Repo. You can also download mindmaker_client.py from the MindMaker RemoteML Github Repo.
+-	Install python dependencies for your client ML program. Start the UE example project. When it is running the mindmaker server application will autolaunch. Now start the mindmaker_client.py. When you run mindmaker_client.py it will automatically search for the mindmaker server on port 3000 and connect. Training will than begin using the algorithm you have selected.
 -	Modify or replace mindmaker_client.py to use python ML library of your choice. mindmaker_client.py includes an OpenAI Gym wrapper for UE that allows any OpenAI compatible machine learning library to interface with Unreal Engine.
+
+Working with Multiple Clients
+
+If you would like to employ multiple ML clients connected to a single learning environment, for instance in a distributed ML scenario, this can be done using MindMaker server and plugin.
+
+To create multiple learning agents, first setup your learning agents as shown in one of the example blueprints. 
+For each new learning agent, you will need to increment the socketio port settings in the new AI controller by 1. At time of launching the server, new server port numbers are automatically created for each new instance of mindmaker.exe that you launch, starting with 3000 and going up from there for a total of 100. If you require more than 100 learning agents, request this in the github repo.
+
+For example, If you add a second learning agent to your map, you will need all the same functions that are in the first learning agent, the launch mindmaker blueprint node etc, but instead of assigning this one to port 3000 you will assign it port 3001 in blueprints. Besides changing the socketio port setting in blueprints, you will also need to also change to change the Connect SocketIO blueprint function, modifying the In Address and Port to the new number you have created “http://localhost:3001” for instance.
+
+Once this is done, you will just need to create a second instance of your mindmaker_client.py file that will connect to your second learning agent. Training can be done simultaneously, in parallel. The only modification that you need to make to mindmaker_client.py is changing  sio.connect('http://localhost:3000') at the bottom of the file to sio.connect('http://localhost:3001') or whatever is the number of new learning agents you are working with. If you have five learning agents, than you will have five instances of the client running and each will have a new port number all the way up to 3005
+
 
 
 ## Quick Install & Setup Using The MindMaker DRL Engine Starter Content
