@@ -87,6 +87,10 @@ To save a trained model, set the “Save Model after Training” checkbox in the
 To load the trained models, uncheck the “Save Model after Training” checkbox and instead set the “Load Pre Trained Model” checkbox in the Launch MindMaker Function to True. You will also need to set the number of training episodes to zero, since no training is to occur. Ensure the number of evaluations episodes is a non-zero integer, since this will be how the pre-trained model demonstrates learning.
 Models are saved locally in the “Appdata roaming” folder of your computer, for instance c:\Users\LeoN\Appdata\Roaming
 
+## Logging with Tensorboard:
+By default MindMaker only saves to the AppData/Roaming directory on windows machines. In the custom parameters of the Launch Mindmaker Blueprint function for the algorithm in UE you have selected, you will need to specify the full path to the directory within app data roaming where you want to save the Tensorboard log file to, for example “C:/Users/aaron/Appdata/Roaming/MindMaker/a2c_cartpole_tensorboard/”
+Substituting the name of the user you are working under for aaron within the path.
+
 
 ## Understand what problem your agent is trying to solve:
 This is a three step process, you need to decide what actions the agent can take, what its reward criteria will be, and what observations the agent will need to make about its environment to successfully learn to receive a reward.
