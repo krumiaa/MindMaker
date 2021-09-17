@@ -1,5 +1,5 @@
-# MindMaker AI Plugin for UE4
-Create Machine Learning AI Agents in Unreal Engine 4
+# MindMaker AI Plugin for Unreal Engine 4 & 5
+Create Machine Learning AI Agents in Unreal Engine 4 & 5
 
 ![Banner](https://github.com/krumiaa/MindMaker/blob/master/banner2.png)
 
