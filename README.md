@@ -21,6 +21,10 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 ### UE5 *EXPERIMENTAL*
 - [Plugin Download](https://drive.google.com/file/d/11PUhT2XjOcZOKzH5gZc8Yr6U9JSgz3hc/view?usp=sharing)
 - [Examples Download](https://drive.google.com/file/d/13JlPjl6QfIJ4HUMxZOvtn65s9BTM4MlB/view?usp=sharing)
+### Videos
+- Intro. To MindMaker Plugin: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA) 
+- Automated Content Creation / AB Testing:  [[https://youtu.be/dmxrN7uUUhs]](https://youtu.be/dmxrN7uUUhs)
+- Creating a Custom Environment with Cart Pole Example: [[https://www.youtube.com/watch?v=kNmNKnDQvgo]](https://www.youtube.com/watch?v=kNmNKnDQvgo) 
 
 
 ## Features
