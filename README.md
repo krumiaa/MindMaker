@@ -144,19 +144,24 @@ CheckReward – this specifies the reward condition for the agent in the environ
 Send Observations Function – takes the new observations made by the agent as well as any reward information and passes them to the standalone application. This is how the RL algorithm will be able to evaluate whether the action it has just taken was a good one, and update its strategy accordingly. After this function fires, the one iteration or episode of the game is complete, and the process repeats ad infinitum.
 
 ## FAQ
-Q: In the exploration stage it seems that the agent does not move, only stands still.
+###Q: In the exploration stage it seems that the agent does not move, only stands still.
+
 A: Certain tasks may require extended periods of training where visualizing the agent movements would prove prohibitively time consuming. As such in certain examples visualizing the agent's movements has been disabled, but training is happening in the background once the example is run and upon completion, the agent will demonstrate the acquired strategy.
 
-Q: How is exploration used, what strategy is used to explore? It is not clear to me what this "random" means, can you give an example?
+###Q: How is exploration used, what strategy is used to explore? It is not clear to me what this "random" means, can you give an example?
+
 A: Random in this case means that the agent is using a random number generator to choose between the actions available to it during training. The RL Algorithm then observes the results of these random actions as well as any rewards received and uses this information to choose better actions during the “exploitation” phase. This is how a learned strategy is developed.
 
-Q: What is the information gathered in the learning stage, what does it look like?
+###Q: What is the information gathered in the learning stage, what does it look like?
+
 A: The information gathering during learning takes the form of an array of observations that are generated after each of the agent’s random actions. If using the MindMaker plugin, the exact shape of the array is defined in the Observation Size property of the Launch Mindmaker Blueprint function and will depend on what variables are necessary for the agent to observe in that particular game or learning task. It will change depending on the learning task or game.
 
-Q: Can the agent perceive the whole environment, or just a small area around him?
+###Q: Can the agent perceive the whole environment, or just a small area around him?
+
 A: The agent perceives only the part of the environment that is exposed to them by the game designer. When using the Mindmaker plugin, these observations are populated in the Make Observations blueprint function call within Unreal Engine. This will generate an array of numbers in the shape defined by Observation Size property of the Launch Mindmaker Blueprint function. Observations should be selected so that they only comprise the data that is necessary for the agent to learn from, otherwise training could become prohibitively time consuming.
 
-Q: What neural network is used? ANN/CNN/RNN?
+###Q: What neural network is used? ANN/CNN/RNN?
+
 A: In vanilla Q Learning – no neural network is required and learning is stored in a tabular format. When using the MindMaker Deep Reinforcement Learning one can choose between a variety of neural network architectures including RNN, CNN etc. One can set these within each algorithm's custom properties of the Launch Mindmaker Blueprint function call. 
 
 ## Further Resources
