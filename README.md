@@ -16,6 +16,7 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 ### UE4 Releases
 - [Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai) Complete Examples Project File
   - [CartPole Task](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e): Creating A Custom Reinforcement Learning Environment  [[YouTube Demonstration Video]](https://www.youtube.com/watch?v=kNmNKnDQvgo)
+  - [Automated Content Creation & A/B Testing](https://towardsdatascience.com/patterns-of-desire-deep-reinforcement-learning-for-automated-content-creation-and-a-b-testing-967fdc2b9c0d): Automated content creation with a player generated reinforcement learning signal  [[YouTube Demonstration Video]](https://youtu.be/dmxrN7uUUhs)
   - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
   - Match To Sample: Solving A Memory Puzzle with a Non Player Character
 ### UE5 *EXPERIMENTAL*
