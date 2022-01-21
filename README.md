@@ -126,8 +126,8 @@ Reward – A reward is a variable that is set according to the specific criterio
 Action – This is a variable that contains an integer value representing whatever action the agent has taken. You will also need to decide the total number of actions available to the agent and set the maxctions in MindMaker to equal this number.
 Observations – Perhapse the trickiest variables you will be dealing with. The key to setting this correctly is to understand that the agents actions themselves must be included in the observations variable, in addition to any other environmental criterion referenced in the reward function. The agent needs to know what action or actions it took that influenced the reward and any environment variables that changed as well. These are passed to the MindMaker learning engine as an array and updated in the observations variable therein.
 
-## Key Functions to add in Unreal Engine
-[Overview Of MindMaker Blueprint Functions)](https://aaron-krumins.medium.com/mindmaker-ai-plugin-for-unreal-engine-4-5-blueprint-functions-9ac8d31c1df5)
+## MindMaker Blueprint Functions
+###[Overview Of MindMaker Blueprint Functions](https://aaron-krumins.medium.com/mindmaker-ai-plugin-for-unreal-engine-4-5-blueprint-functions-9ac8d31c1df5)
 A sample list of functions from the example project are presented below to understand how information is passed between MindMaker and Unreal Engine
 All of the UE assets relevant to the toy problem are contained in the Assets/DeeplearningNPC folder. Of particular importance is the blueprint called AI_Character_Controler_BP
 In the AI_Character_Controler_BP blueprint, all of the environment variables are configured for passing to the MindMaker standalone application. 
