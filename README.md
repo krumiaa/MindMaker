@@ -117,7 +117,9 @@ MindMaker functions by wrapping an unreal environment in a OpenAI Gym compatible
 
 Configuring MindMaker Learning Engine
 At the outset you will need to configure the Launch Mindmaker function within Unreal Engine for your learning agent. This is done by setting the action_space variable within MindMaker to equal the total number of actions available to your agent. 
-You will also need to configure the observation_space variable to match the number and type of observations your agent will be using in regard to the reward it is attempting to receive. By default, observations are passed in from Unreal as an array, see the example project.  Depending on the number of observations your agent will find necessary to use, the size of observation_space will change. 
+You will also need to configure the observation_space variable to match the number and type of observations your agent will be using in regard to the reward it is attempting to receive. By default, observations are passed in from Unreal as an array, see the example project.  Depending on the number of observations your agent will find necessary to use, the size of observation_space will change.
+
+
 
 ## Key Variables to add in Unreal Engine
 Reward – A reward is a variable that is set according to the specific criterion you have chosen for the agent to learn or optimize around. In the UE4 blueprint you will use a branch node to determine what environmental conditions and agent action must be fulfilled for the reward to be activated. This is than passed to MindMaker by the socketIO connection. See Project example. 
@@ -125,6 +127,7 @@ Action – This is a variable that contains an integer value representing whatev
 Observations – Perhapse the trickiest variables you will be dealing with. The key to setting this correctly is to understand that the agents actions themselves must be included in the observations variable, in addition to any other environmental criterion referenced in the reward function. The agent needs to know what action or actions it took that influenced the reward and any environment variables that changed as well. These are passed to the MindMaker learning engine as an array and updated in the observations variable therein.
 
 ## Key Functions to add in Unreal Engine
+[Overview Of MindMaker Blueprint Functions)](https://aaron-krumins.medium.com/mindmaker-ai-plugin-for-unreal-engine-4-5-blueprint-functions-9ac8d31c1df5)
 A sample list of functions from the example project are presented below to understand how information is passed between MindMaker and Unreal Engine
 All of the UE assets relevant to the toy problem are contained in the Assets/DeeplearningNPC folder. Of particular importance is the blueprint called AI_Character_Controler_BP
 In the AI_Character_Controler_BP blueprint, all of the environment variables are configured for passing to the MindMaker standalone application. 
