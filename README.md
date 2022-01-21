@@ -26,7 +26,7 @@ A functioning version of the DRL Learning Engine is included in the link to the 
 - [Intro. To The MindMaker Plugin](https://www.youtube.com/watch?v=ERm_pZhAPIA) 
 - [Automated Content Creation / AB Testing](https://youtu.be/dmxrN7uUUhs)
 - [Creating a Custom Environment with Cart Pole Example](https://www.youtube.com/watch?v=kNmNKnDQvgo) 
-### Documents
+### Documentation
 - [Overview Of MindMaker Blueprint Functions](https://aaron-krumins.medium.com/mindmaker-ai-plugin-for-unreal-engine-4-5-blueprint-functions-9ac8d31c1df5)
 
 ## Features
