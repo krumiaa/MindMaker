@@ -60,9 +60,9 @@ To experiment using different ML libraries in conjunction with MindMaker, use th
 -	Install python dependencies for your client ML program. Start the UE example project. When it is running the mindmaker server application will autolaunch. Now start the mindmaker_client.py. When you run mindmaker_client.py it will automatically search for the mindmaker server on port 3000 and connect. Training will than begin using the algorithm you have selected.
 -	Modify or replace mindmaker_client.py to use python ML library of your choice. mindmaker_client.py includes an OpenAI Gym wrapper for UE that allows any OpenAI compatible machine learning library to interface with Unreal Engine.
 
-Working with Multiple Clients
+## MARL (Multi Agent Reinforcement Learning & Working with Multiple Clients)
 
-If you would like to employ multiple ML clients connected to a single learning environment, for instance in a distributed ML scenario, this can be done using MindMaker server and plugin.
+If you would like to employ multiple ML clients connected to a single learning environment, for instance in a multi agent scenario, this can be done using MindMaker server and plugin.
 
 To create multiple learning agents, first setup your learning agents as shown in one of the example blueprints. 
 For each new learning agent, you will need to increment the socketio port settings in the new AI controller by 1. At time of launching the server, new server port numbers are automatically created for each new instance of mindmaker.exe that you launch, starting with 3000 and going up from there for a total of 100. If you require more than 100 learning agents, request this in the github repo.
