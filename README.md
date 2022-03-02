@@ -19,7 +19,7 @@ A functioning version of the DRL Learning Engine is included in the link to the 
   - [Automated Content Creation & A/B Testing](https://towardsdatascience.com/patterns-of-desire-deep-reinforcement-learning-for-automated-content-creation-and-a-b-testing-967fdc2b9c0d): Automated content creation with a player generated reinforcement learning signal  [[YouTube Demonstration Video]](https://youtu.be/dmxrN7uUUhs)
   - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
   - Match To Sample: Solving A Memory Puzzle with a Non Player Character
-### UE5 *EXPERIMENTAL*
+### UE5 *Technology Preview*
 - [Plugin Download](https://drive.google.com/file/d/11PUhT2XjOcZOKzH5gZc8Yr6U9JSgz3hc/view?usp=sharing)
 - [Examples Download](https://drive.google.com/file/d/13JlPjl6QfIJ4HUMxZOvtn65s9BTM4MlB/view?usp=sharing)
 ### Videos
