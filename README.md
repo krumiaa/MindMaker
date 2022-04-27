@@ -97,8 +97,9 @@ To load the trained models, uncheck the “Save Model after Training” checkbox
 Models are saved locally in the “Appdata roaming” folder of your computer, for instance c:\Users\LeoN\Appdata\Roaming
 
 ## Logging with Tensorboard:
-By default MindMaker only saves to the AppData/Roaming directory on windows machines. In the custom parameters of the Launch Mindmaker Blueprint function for the algorithm in UE you have selected, you will need to specify the full path to the directory within app data roaming where you want to save the Tensorboard log file to, for example “C:/Users/aaron/Appdata/Roaming/MindMaker/a2c_cartpole_tensorboard/”
-Substituting the name of the user you are working under for aaron within the path.
+By default MindMaker only saves to the AppData/Roaming directory on windows machines. To enable Tensorboard logging, follow these steps. 
+1. Make sure the Use Custom Parameters Boolean checkbox is set to true within the Launch MindMaker Blueprint function. 2. Open the custom parameters for the algorithm you have selected to work with. Ensure the value for the full_tensorboard_log is set to "True". Next go to the tensorboard_log parameter and you will need to specify the FULL path to the directory within app data roaming where you want to save the Tensorboard log file to, for example “C:/Users/aaron/Appdata/Roaming/MindMaker/a2c_cartpole_tensorboard/”
+Substitute the name of the user you are working under for aaron within the path. Do not use quotation marks. After training, go to the directory you specified and your log files will be there.
 
 
 ## Understand what problem your agent is trying to solve:
