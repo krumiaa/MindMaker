@@ -20,8 +20,8 @@ A functioning version of the DRL Learning Engine is included in the link to the 
   - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
   - Match To Sample: Solving A Memory Puzzle with a Non Player Character
 ### UE5 *Technology Preview* *-Experimental-*
-- [Plugin Download](https://drive.google.com/file/d/11PUhT2XjOcZOKzH5gZc8Yr6U9JSgz3hc/view?usp=sharing)
-- [Examples Download](https://drive.google.com/file/d/13JlPjl6QfIJ4HUMxZOvtn65s9BTM4MlB/view?usp=sharing)
+- [Plugin Download](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
+- [Examples Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai)
 ### Videos
 - [Intro. To The MindMaker Plugin](https://www.youtube.com/watch?v=ERm_pZhAPIA) 
 - [Automated Content Creation / AB Testing](https://youtu.be/dmxrN7uUUhs)
