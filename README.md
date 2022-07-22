@@ -10,18 +10,18 @@ Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.
 Possible applications extend beyond game design to a variety of scientific and technical endeavors. These include robotic simulation, autonomous driving, generative architecture, procedural graphics and much more. This API provides a central platform from which advances in machine learning can reach many of these fields.
 For game developers, the use cases for self-optimizing agents include controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), prototyping game design decisions, and automated testing of game builds.
 
-A functioning version of the DRL Learning Engine is included in the link to the example project. Algorithms presently supported by the DRL Learning Engine include : Actor Critic ( A2C ), Sample Efficient Actor-Critic with Experience Replay (ACER), Actor Critic using Kronecker-Factored Trust Region ( ACKTR ), Deep Q Network ( DQN ), Proximal Policy Optimization ( PPO ), Soft Actor Critic ( SAC ), Twin Delayed DDPG ( TD3 ), Trust Region Policy Optimization ( TRPO ), Deep Deterministic Policy Gradient ( DDPG ). The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
+The DRL Learning Engine is included in the link to the example project as well as the python source code for modifying it, found in the Content\MindMaker\Source directory. Algorithms presently supported by the DRL Learning Engine include : Actor Critic ( A2C ), Sample Efficient Actor-Critic with Experience Replay (ACER), Actor Critic using Kronecker-Factored Trust Region ( ACKTR ), Deep Q Network ( DQN ), Proximal Policy Optimization ( PPO ), Soft Actor Critic ( SAC ), Twin Delayed DDPG ( TD3 ), Trust Region Policy Optimization ( TRPO ), Deep Deterministic Policy Gradient ( DDPG ). The plugin is functionally similar to Unity’s ML agents, with some advantages - rather than needing to create custom OpenAI Gym environment for every application, one uses a single environment and simply choose which of the Agent’s observations and actions to expose to the ML algorithm. Voila, let the learning begin!
 
 ## Examples & Tutorials
 ### UE4 Releases
-- [Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai) Complete Examples Project File
+- [Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai) Complete Examples Project File and Python Source Code
   - [CartPole Task](https://towardsdatascience.com/create-a-custom-deep-reinforcement-learning-environment-in-ue4-cf7055aebb3e): Creating A Custom Reinforcement Learning Environment  [[YouTube Demonstration Video]](https://www.youtube.com/watch?v=kNmNKnDQvgo)
   - [Automated Content Creation & A/B Testing](https://towardsdatascience.com/patterns-of-desire-deep-reinforcement-learning-for-automated-content-creation-and-a-b-testing-967fdc2b9c0d): Automated content creation with a player generated reinforcement learning signal  [[YouTube Demonstration Video]](https://youtu.be/dmxrN7uUUhs)
   - [Automated Stock Trading](https://medium.com/datadriveninvestor/using-the-game-engine-for-automated-stock-trading-without-a-single-line-of-code-31d46f548ab2): Build a Bitcoin Bot In Unreal Engine 4 using Deep Reinforcement Learning
   - Match To Sample: Solving A Memory Puzzle with a Non Player Character
 ### UE5 *Technology Preview* *-Experimental-*
 - [Plugin Download](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)
-- [Examples Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai)
+- [Examples Download](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai) (includes python source code for DRL algorithms)
 ### Videos
 - [Intro. To The MindMaker Plugin](https://www.youtube.com/watch?v=ERm_pZhAPIA) 
 - [Automated Content Creation / AB Testing](https://youtu.be/dmxrN7uUUhs)
