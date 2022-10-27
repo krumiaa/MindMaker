@@ -1,7 +1,7 @@
 # MindMaker Example Project
 
 **Download the UE4 Example Project at the link below:**
-https://drive.google.com/file/d/15Z_A7CsJ079g3Xj19DqweyMR7yThiM3-/view?usp=sharing
+https://www.unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai/
 To run the MindMaker DRL example first one must add the MindMaker AI Plugin to the project. The Plugin will automatically launch the MindMaker Learning Engine at the beginning of play as well as providing the communication library for interfacing with the learning engine.
 The MindMaker Learning Engine, an executable .exe file contains the learning algorithms the agent will use to develop a strategic behavior. Once the MindMaker.exe  is launched, it must be kept open and running for the duration of the demonstration. 
 Next one can open the Unreal Engine Project and hit the play button. The agent pictured in the environment will not initially move but it will begin simulating actions, as seen in the log data streaming to the screen.  During this time it is mostly taking random actions, and from the results of those actions, develops a strategy.
