@@ -3,7 +3,9 @@ Create Machine Learning AI Agents in Unreal Engine 4 & 5
 
 ![Banner](https://github.com/krumiaa/MindMaker/blob/master/banner2.png)
 
-Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
+###Videos
+
+Introduction to MindMaker: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
 
 Blueprints Overview: [https://youtu.be/Tuo423NujEk](https://youtu.be/Tuo423NujEk)
 
