@@ -4,6 +4,7 @@ Create Machine Learning AI Agents in Unreal Engine 4 & 5
 ![Banner](https://github.com/krumiaa/MindMaker/blob/master/banner2.png)
 
 Intro. Video: [https://www.youtube.com/watch?v=ERm_pZhAPIA](https://www.youtube.com/watch?v=ERm_pZhAPIA)
+
 Blueprints Overview: [https://youtu.be/Tuo423NujEk](https://youtu.be/Tuo423NujEk)
 
 **[The MindMaker AI Plugin](https://www.unrealengine.com/marketplace/en-US/product/mindmaker-ai-plugin)** is an open-source plugin that enables games and simulations within UE4 and UE5 to function as OpenAI Gym environments for training autonomous machine learning agents. The plugin facilitates a network connection between an Unreal Engine Project containing the learning environment, and a python ML library that receives data from Unreal Engine and parses into a custom OpenAI Gym environment for training the agent. The standalone machine learning library can either be a custom python script in the event you are creating your own ML tool using MindMaker’s Remote ML Server, or it could be a precompiled learning engine such as [MindMaker’s DRL Engine(Stable-Baselines3 Algorithms)](https://unrealengine.com/marketplace/en-US/product/neurostudio-self-learning-ai). Regardless of which option you choose, using the MindMaker AI Plugin developers and researchers can easily train machine learning agents for 2D, 3D and VR projects.
