@@ -72,6 +72,9 @@ For example, If you add a second learning agent to your map, you will need all t
 
 Once this is done, you will just need to create a second instance of your mindmaker_client.py file that will connect to your second learning agent. Training can be done simultaneously, in parallel. The only modification that you need to make to mindmaker_client.py is changing  sio.connect('http://localhost:3000') at the bottom of the file to sio.connect('http://localhost:3001') or whatever is the number of new learning agents you are working with. If you have five learning agents, than you will have five instances of the client running and each will have a new port number all the way up to 3005
 
+## Imitation Learning (Experimental)
+[Imitation Learning with Stablebaselines 3](https://stable-baselines3.readthedocs.io/en/master/guide/imitation.html)
+The Mindmaker python source can be modified to support Imitation Learning using the supported Stablebaselines Imitation Learning Algorithms
 
 
 ## Quick Install & Setup Using The MindMaker DRL Engine Starter Content
